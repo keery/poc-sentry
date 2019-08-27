@@ -11,7 +11,7 @@ router.get('/test', (req, res) => {
 });
 
 router.get('/error', (req, res) => {
-    throw new Error('My first Sentry error!');
+    throw new Error('FUC**** ERROR');
 });
 
 export default router;

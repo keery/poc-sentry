@@ -9,7 +9,11 @@ dotenv.config();
 
 const app = express();
 
-Sentry.init({ dsn: process.env.SENTRY_DSN });
+Sentry.init({
+    release     : `${process.env.PROJECT_NAME}@${process.env.PROJECT_VERSION}`,
+    environment : process.env.NODE_ENV,
+    dsn         : process.env.SENTRY_DSN,
+});
 
 // The request handler must be the first middleware on the app
 app.use(Sentry.Handlers.requestHandler());
