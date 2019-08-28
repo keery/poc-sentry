@@ -3,15 +3,15 @@ import { Router } from 'express';
 const router = Router();
 
 router.get('/', (req, res) => {
-    res.send('Hello World');
+    res.render('home');
 });
 
-router.get('/test', (req, res) => {
-    res.send('Page de test');
+router.get('/error1', (req, res) => {
+    throw new Error('Useless module not found')
 });
 
-router.get('/error', (req, res) => {
-    throw new Error('FUC**** ERROR');
+router.get('/error2', (req, res) => {
+    throw new Error('A beautiful useless error')
 });
 
 export default router;

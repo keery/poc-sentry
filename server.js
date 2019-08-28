@@ -15,6 +15,14 @@ Sentry.init({
     dsn         : process.env.SENTRY_DSN,
 });
 
+// Documentation about scope : https://docs.sentry.io/enriching-error-data/context/?platform=node
+Sentry.configureScope((scope) => {
+    scope.setUser({ email : 'guillaume@example.com' });
+});
+
+app.set('views', './views')
+app.set('view engine', 'pug');
+
 // The request handler must be the first middleware on the app
 app.use(Sentry.Handlers.requestHandler());
 

@@ -1,0 +1,15 @@
+html
+    head
+        title='Sentry POC/title'
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    body
+        div.container-fluid
+            h1 Sentry POC
+            ul.nav.nav-tabs
+                li.nav-item
+                    a(class='nav-link' href='/') Home
+                li.nav-item
+                    a(class='nav-link' href='error1') Error : 1
+                li.nav-item
+                    a(class='nav-link' href='error2') Error : 2
+            div(role='alert' class='alert alert-danger') #{err}
