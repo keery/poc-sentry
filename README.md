@@ -6,7 +6,7 @@
 
 # Sentry POC 
 
-## Installation :
+## 💿 Installation :
 
 
 ``` bash
@@ -17,6 +17,13 @@ npm i
 npm run start
 ```
 
+## 🧾 Description :
+
+A small application which emits errors to linked Sentry Account.  
+It includes 3 routes :
+- **/** = Home page
+- **/error1** = First error
+- **/error2** = Second error
 
 ## 🚀 Useful links 
 
