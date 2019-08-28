@@ -20,5 +20,5 @@ npm run start
 
 ## 🚀 Useful links 
 
-[Sentry Documentation](https://docs.sentry.io/error-reporting/quickstart/?platform=node)
+[Sentry Documentation](https://docs.sentry.io/error-reporting/quickstart/?platform=node)  
 [Sentry Dashboard](https://sentry.io/settings/)
