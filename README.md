@@ -14,7 +14,7 @@
 npm i
 
 # Start application
-npm run start
+npm run dev
 ```
 
 ## 🧾 Description :
@@ -24,6 +24,19 @@ It includes 3 routes :
 - **/** = Home page
 - **/error1** = First error
 - **/error2** = Second error
+
+
+## 👍 Pros
+- By default it catches a lot of information about the user context who has encountered an error, and it's possible to add any information like current release, authenticated user, environment, or anything.  
+- Function called breadcrumb trail which is which is a trail of events that allows to have complete and structured logs directly on Sentry.  
+- Create teams that are linked to a project, main goal is to alert everyone when an error occurred.  
+- Receive alerts directly by mail.  
+- Possibility to create many projects to separate distinctly errors, for example both client and server.  
+- Compatible and integrable with many different tools like Gitlab, Jira, Slack ...  
+- Easy to plug  
+
+## 👎 Cons:
+- In trial version, long delay to receive emails.  
 
 ## 🚀 Useful links 
 
